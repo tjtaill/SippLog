@@ -1,0 +1,95 @@
+----------------------------------------------- 2015-05-05 15:39:27:283.288
+UDP message sent (657 bytes):
+
+INVITE sip:6986604@mtlasdev86.net SIP/2.0
+Via: SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK-12036-1-0
+From: <sip:5146986603@mtlasdev86.net>;tag=1
+To: <sip:6986604@mtlasdev86.net>
+Route: <sip:10.9.39.33:5060;lr;call=orig>,<sip:10.9.55.11:5062;lr>
+Call-ID: 1-12036@10.9.55.11
+CSeq: 1 INVITE
+Allow: ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,NOTIFY,UPDATE
+Contact: <sip:5146986603@10.9.55.11:5061>
+Max-Forwards: 70
+Subject: Performance Test
+Supported: 100rel
+Content-Type: application/sdp
+Content-Length:   131
+
+v=0
+o=user1 53655765 2353687637 IN IP4 127.0.0.1
+s=-
+c=IN IP4 10.9.55.11
+t=0 0
+m=audio 12000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+----------------------------------------------- 2015-05-05 15:39:27:287.288
+UDP message received [218] bytes :
+
+SIP/2.0 100 Trying
+Via:SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK-12036-1-0
+From:<sip:5146986603@mtlasdev86.net>;tag=1
+To:<sip:6986604@mtlasdev86.net>
+Call-ID:1-12036@10.9.55.11
+CSeq:1 INVITE
+Content-Length:0
+
+
+----------------------------------------------- 2015-05-05 15:39:27:342.288
+UDP message received [643] bytes :
+
+SIP/2.0 183 Session Progress
+Via:SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK-12036-1-0
+From:<sip:5146986603@mtlasdev86.net>;tag=1
+To:<sip:6986604@mtlasdev86.net>;tag=1409488404-1430854771792
+Call-ID:1-12036@10.9.55.11
+CSeq:1 INVITE
+Allow:ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,UPDATE,NOTIFY
+Supported:
+Contact:<sip:10.9.39.33:5060>
+Session:Media
+RSeq:315331112
+P-Asserted-Identity:<sip:6986604@mtlasdev86.net;user=phone>
+Privacy:none
+Require:100rel
+Content-Type:application/sdp
+Content-Length:121
+
+v=0
+o=BroadWorks 27 1 IN IP4 127.0.0.1
+s=-
+c=IN IP4 10.9.55.11
+t=0 0
+m=audio 12001 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+----------------------------------------------- 2015-05-05 15:39:27:343.288
+UDP message sent (445 bytes):
+
+PRACK sip:10.9.39.33:5060 SIP/2.0
+Via:SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK-12036-1-0
+From:<sip:5146986603@mtlasdev86.net>;tag=1
+To:<sip:6986604@mtlasdev86.net>;tag=1409488404-1430854771792
+Call-ID:1-12036@10.9.55.11
+CSeq: 2 PRACK
+RAck: 315331112 1 INVITE
+Allow:ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,NOTIFY,UPDATE
+Contact: <sip:5146986603@10.9.55.11:5061>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+
+----------------------------------------------- 2015-05-05 15:39:27:349.288
+UDP message received [242] bytes :
+
+SIP/2.0 200 OK
+Via:SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK-12036-1-0
+From:<sip:5146986603@mtlasdev86.net>;tag=1
+To:<sip:6986604@mtlasdev86.net>;tag=1409488404-1430854771792
+Call-ID:1-12036@10.9.55.11
+CSeq:2 PRACK
+Content-Length:0
+
+

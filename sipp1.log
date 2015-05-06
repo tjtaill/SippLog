@@ -1,0 +1,177 @@
+----------------------------------------------- 2015-04-21 11:29:00:855.205
+UDP message received [1450] bytes :
+
+INVITE sip:5146976611@10.9.55.11:5062;user=phone;transport=udp SIP/2.0
+Via: SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bK75ab12e71c342c3569fe571aaa9c25718d3551aa,SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorksProxy.191ujc91903547764-620273082,SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bKf6ebf0fbe3917310fa23605c55d0b4716f564dae,SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5070-0-776756755-1389955883-1429630139428-
+From: "john3 south" <sip:5146976603@mtlasdev55.net;user=phone>;tag=1389955883-1429630139428-
+To: "john7 south" <sip:5146976611@mtlasdev55.net>;cscf
+Call-ID: BW112859428210415-1573890014@10.9.55.21
+CSeq: 776756755 INVITE
+Contact: <sip:10.9.55.21:5060>
+P-Asserted-Identity: "john3 south" <sip:5146976603@mtlasdev55.net>,"john3 south" <tel:+15146976603>
+Privacy: none
+Supported: 100rel
+Allow: ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,UPDATE,NOTIFY
+Call-Info: <sip:10.9.55.21>;appearance-index=1
+Accept: multipart/mixed,application/media_control+xml,application/sdp
+Max-Forwards: 7
+Record-Route: <sip:10.9.55.11:5070;lr;transport=udp>,<sip:10.9.55.11:5070;lr>
+Content-Type: application/sdp
+Content-Length: 286
+
+v=0
+o=BroadWorks 148 1 IN IP4 10.9.55.37
+s=-
+c=IN IP4 10.9.55.37
+t=0 0
+m=audio 11796 RTP/AVP 0 8 18 9 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:9 G722/8000
+a=fmtp:101 0-15
+a=rtpmap:101 telephone-event/8000
+a=sendonly
+
+----------------------------------------------- 2015-04-21 11:29:00:917.205
+UDP message sent (844 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bK75ab12e71c342c3569fe571aaa9c25718d3551aa,SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorksProxy.191ujc91903547764-620273082,SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bKf6ebf0fbe3917310fa23605c55d0b4716f564dae,SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5070-0-776756755-1389955883-1429630139428-
+From: "john3 south" <sip:5146976603@mtlasdev55.net;user=phone>;tag=1389955883-1429630139428-
+To: "john7 south" <sip:5146976611@mtlasdev55.net>;cscf;tag=1
+Call-ID: BW112859428210415-1573890014@10.9.55.21
+CSeq: 776756755 INVITE
+Record-Route: <sip:10.9.55.11:5070;lr;transport=udp>,<sip:10.9.55.11:5070;lr>
+Contact: <sip:5146976602@10.9.55.11:5062;transport=UDP>
+Allow: ACK, BYE, INFO, CANCEL, INVITE, NOTIFY, OPTIONS, REFER, REGISTER
+Content-Length: 0
+
+
+----------------------------------------------- 2015-04-21 11:29:05:918.205
+UDP message sent (933 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bK75ab12e71c342c3569fe571aaa9c25718d3551aa,SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorksProxy.191ujc91903547764-620273082,SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bKf6ebf0fbe3917310fa23605c55d0b4716f564dae,SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5070-0-776756755-1389955883-1429630139428-
+From: "john3 south" <sip:5146976603@mtlasdev55.net;user=phone>;tag=1389955883-1429630139428-
+To: "john7 south" <sip:5146976611@mtlasdev55.net>;cscf;tag=1
+Call-ID: BW112859428210415-1573890014@10.9.55.21
+CSeq: 776756755 INVITE
+Record-Route: <sip:10.9.55.11:5070;lr;transport=udp>,<sip:10.9.55.11:5070;lr>
+Contact: <sip:5146976602@10.9.55.11:5062;transport=UDP>
+Content-Type: application/sdp
+Content-Length:   132
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.9.55.11
+s=-
+c=IN IP4 10.9.55.11
+t=0 0
+m=audio 12001 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+----------------------------------------------- 2015-04-21 11:29:06:162.205
+UDP message received [670] bytes :
+
+ACK sip:5146976602@10.9.55.11:5062;transport=UDP SIP/2.0
+Via: SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bKc74503e200e16dcab5c36c551ea146897321f2aa,SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bKb86874bb9ddaa2d69853cf1ed87483a6dff2b851,SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5070-0-776756755A1389955883-1429630139428-
+From: "john3 south" <sip:5146976603@mtlasdev55.net;user=phone>;tag=1389955883-1429630139428-
+To: "john7 south" <sip:5146976611@mtlasdev55.net>;tag=1;cscf
+Call-ID: BW112859428210415-1573890014@10.9.55.21
+CSeq: 776756755 ACK
+Contact: <sip:10.9.55.21:5060>
+Reason: broadworks;reconnecting
+Max-Forwards: 8
+Content-Length: 0
+
+
+----------------------------------------------- 2015-04-21 11:29:06:165.205
+UDP message received [796] bytes :
+
+INVITE sip:5146976602@10.9.55.11:5062;transport=UDP SIP/2.0
+Via: SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bK9f7d8f4fc88ffdb1012632fb0b00d0d04a3392bc,SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bKb578771eb612e14455b9d01cf441be41351a21aa,SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5070-0-776756756-1389955883-1429630139428-
+From: "john3 south" <sip:5146976603@mtlasdev55.net;user=phone>;tag=1389955883-1429630139428-
+To: "john7 south" <sip:5146976611@mtlasdev55.net>;tag=1;cscf
+Call-ID: BW112859428210415-1573890014@10.9.55.21
+CSeq: 776756756 INVITE
+Contact: <sip:10.9.55.21:5060>
+Allow: ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,UPDATE,NOTIFY
+Supported: 
+Accept: multipart/mixed,application/media_control+xml,application/sdp
+Max-Forwards: 8
+Content-Length: 0
+
+
+----------------------------------------------- 2015-04-21 11:29:06:166.205
+UDP message sent (773 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bK9f7d8f4fc88ffdb1012632fb0b00d0d04a3392bc,SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bKb578771eb612e14455b9d01cf441be41351a21aa,SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5070-0-776756756-1389955883-1429630139428-
+From: "john3 south" <sip:5146976603@mtlasdev55.net;user=phone>;tag=1389955883-1429630139428-
+To: "john7 south" <sip:5146976611@mtlasdev55.net>;tag=1;cscf
+Call-ID: BW112859428210415-1573890014@10.9.55.21
+CSeq: 776756756 INVITE
+Contact: <sip:5146976602@10.9.55.11:5062;transport=UDP>
+Content-Type: application/sdp
+Content-Length:   132
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.9.55.11
+s=-
+c=IN IP4 10.9.55.11
+t=0 0
+m=audio 12001 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+----------------------------------------------- 2015-04-21 11:29:06:805.205
+UDP message received [849] bytes :
+
+ACK sip:5146976602@10.9.55.11:5062;transport=UDP SIP/2.0
+Via: SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bKd80e3a3546bf741d2f1f89a74b7891a40fd14228,SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bKa78adbbe9cf6b3def81fd43b1bf6d7325adba080,SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5070-0-776756756A1389955883-1429630139428-
+From: "john3 south" <sip:5146976603@mtlasdev55.net;user=phone>;tag=1389955883-1429630139428-
+To: "john7 south" <sip:5146976611@mtlasdev55.net>;tag=1;cscf
+Call-ID: BW112859428210415-1573890014@10.9.55.21
+CSeq: 776756756 ACK
+Contact: <sip:10.9.55.21:5060>
+Max-Forwards: 8
+Content-Type: application/sdp
+Content-Length: 179
+
+v=0
+o=BroadWorks 152 1 IN IP4 10.9.55.37
+s=-
+c=IN IP4 10.9.55.37
+t=0 0
+m=audio 11796 RTP/AVP 0 101
+a=rtpmap:0 PCMU/8000
+a=fmtp:101 0-15
+a=rtpmap:101 telephone-event/8000
+
+----------------------------------------------- 2015-04-21 11:29:20:852.205
+UDP message received [670] bytes :
+
+BYE sip:5146976602@10.9.55.11:5062;transport=UDP SIP/2.0
+Via: SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bK3eb61b874a6e236d7a030e8bc6d5617bb21c2da1,SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bK374eb1b8cbbfb194aba5988473ec0525d129ad8e,SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5070-0-776756757-1389955883-1429630139428-
+From: "john3 south" <sip:5146976603@mtlasdev55.net;user=phone>;tag=1389955883-1429630139428-
+To: "john7 south" <sip:5146976611@mtlasdev55.net>;tag=1;cscf
+Call-ID: BW112859428210415-1573890014@10.9.55.21
+CSeq: 776756757 BYE
+Max-Forwards: 8
+Record-Route: <sip:10.9.55.11:5070;lr>,<sip:10.9.55.11:5070;lr>
+Content-Length: 0
+
+
+----------------------------------------------- 2015-04-21 11:29:20:852.205
+UDP message sent (603 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bK3eb61b874a6e236d7a030e8bc6d5617bb21c2da1,SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bK374eb1b8cbbfb194aba5988473ec0525d129ad8e,SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5070-0-776756757-1389955883-1429630139428-
+From: "john3 south" <sip:5146976603@mtlasdev55.net;user=phone>;tag=1389955883-1429630139428-
+To: "john7 south" <sip:5146976611@mtlasdev55.net>;tag=1;cscf
+Call-ID: BW112859428210415-1573890014@10.9.55.21
+CSeq: 776756757 BYE
+Contact: <sip:5146976602@10.9.55.11:5062;transport=UDP>
+Content-Length: 0
+
+
