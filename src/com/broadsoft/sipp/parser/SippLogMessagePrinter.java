@@ -11,6 +11,9 @@ import java.io.FileInputStream;
 
 public class SippLogMessagePrinter  {
     public static void main(String[] args) throws Exception {
+        // ignore standard error
+        System.err.close();
+
         ANTLRInputStream input = new ANTLRInputStream( new FileInputStream( new File( args[0] ) ) );
 
         SippLogLexer lexer = new SippLogLexer( input );

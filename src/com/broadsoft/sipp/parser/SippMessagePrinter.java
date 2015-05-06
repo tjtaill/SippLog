@@ -2,17 +2,16 @@ package com.broadsoft.sipp.parser;
 
 import org.antlr.v4.runtime.misc.NotNull;
 
-/**
- * Created by troy on 2015-05-05.
- */
 public class SippMessagePrinter extends SippLogBaseListener {
     @Override
     public void exitSipResponse(@NotNull SippLogParser.SipResponseContext ctx) {
-        System.out.println(ctx.responseLine().RESPONSE_LINE().getText());
+        String response = ctx.responseLine().RESPONSE_LINE().getText().split(" ", 3)[1];
+        System.out.println(response);
     }
 
     @Override
     public void exitSipRequest(@NotNull SippLogParser.SipRequestContext ctx) {
-        System.out.println(ctx.requestLine().REQUEST_LINE().getText());
+        String request = ctx.requestLine().REQUEST_LINE().getText().split(" ", 2)[0];
+        System.out.println(request);
     }
 }
