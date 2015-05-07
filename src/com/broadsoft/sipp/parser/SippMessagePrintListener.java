@@ -2,7 +2,7 @@ package com.broadsoft.sipp.parser;
 
 import org.antlr.v4.runtime.misc.NotNull;
 
-public class SippMessagePrinter extends SippLogBaseListener {
+public class SippMessagePrintListener extends SippLogBaseListener {
     @Override
     public void exitSipResponse(@NotNull SippLogParser.SipResponseContext ctx) {
         String response = ctx.responseLine().RESPONSE_LINE().getText().split(" ", 3)[1];
