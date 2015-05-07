@@ -38,7 +38,7 @@ public class SippLogMscListener extends SippLogBaseListener {
                 Integer.valueOf(units[1]), // minutes
                 Integer.valueOf(units[2]), // seconds
                 Integer.valueOf(fractions[0]), // millis
-                Integer.valueOf(fractions[1].substring(0, fractions[1].length()-1)) // nanos strip trailing newline ?
+                Integer.valueOf(fractions[1].replaceAll("\\s", ""))
                 );
     }
 
