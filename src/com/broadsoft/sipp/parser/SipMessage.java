@@ -15,9 +15,9 @@ public class SipMessage implements Comparable<SipMessage> {
     }
 
 
-    private final TimeStamp timeStamp;
-    private final String message;
-    private final Direction direction;
+    final TimeStamp timeStamp;
+    final String message;
+    final Direction direction;
 
     public SipMessage(TimeStamp timeStamp, String message, Direction direction) {
         this.timeStamp = timeStamp;

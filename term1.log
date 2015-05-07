@@ -1,0 +1,79 @@
+----------------------------------------------- 2015-05-07 11:09:43:139.620
+UDP message received [1036] bytes :
+
+INVITE sip:5146976602@10.9.55.11:5062;user=phone;transport=udp SIP/2.0
+Via: SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bK1fc47e172caada4fd742021bd59a4f6af75ea362,SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5070-0-393636115-170158695-1431011381796-
+From: "john0 south" <sip:5146976600@mtlasdev55.net;user=phone>;tag=170158695-1431011381796-
+To: "john2 south" <sip:5146976602@10.9.55.11:5070>
+Call-ID: BW110941796070515903781307@10.9.55.21
+CSeq: 393636115 INVITE
+Contact: <sip:10.9.55.21:5060>
+P-Asserted-Identity: "john0 south" <sip:5146976600@mtlasdev55.net>,"john0 south" <tel:+15146976600>
+Privacy: none
+Allow: ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,UPDATE,NOTIFY
+Accept: multipart/mixed,application/media_control+xml,application/sdp
+Supported: 
+Max-Forwards: 9
+Content-Type: application/sdp
+Record-Route: <sip:10.9.55.11:5070;lr;transport=udp>
+Content-Length: 123
+
+v=0
+o=BroadWorks 474 1 IN IP4 10.9.55.11
+s=-
+c=IN IP4 10.9.55.11
+t=0 0
+m=audio 12000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+----------------------------------------------- 2015-05-07 11:09:43:200.620
+UDP message sent (647 bytes):
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bK1fc47e172caada4fd742021bd59a4f6af75ea362,SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5070-0-393636115-170158695-1431011381796-
+From: "john0 south" <sip:5146976600@mtlasdev55.net;user=phone>;tag=170158695-1431011381796-
+To: "john2 south" <sip:5146976602@10.9.55.11:5070>;tag=1
+Call-ID: BW110941796070515903781307@10.9.55.21
+CSeq: 393636115 INVITE
+Record-Route: <sip:10.9.55.11:5070;lr;transport=udp>
+Contact: <sip:5146976602@10.9.55.11:5062;transport=UDP>
+Allow: ACK, BYE, INFO, CANCEL, INVITE, NOTIFY, OPTIONS, REFER, REGISTER
+Content-Length: 0
+
+
+----------------------------------------------- 2015-05-07 11:09:48:202.620
+UDP message sent (736 bytes):
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bK1fc47e172caada4fd742021bd59a4f6af75ea362,SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5070-0-393636115-170158695-1431011381796-
+From: "john0 south" <sip:5146976600@mtlasdev55.net;user=phone>;tag=170158695-1431011381796-
+To: "john2 south" <sip:5146976602@10.9.55.11:5070>;tag=1
+Call-ID: BW110941796070515903781307@10.9.55.21
+CSeq: 393636115 INVITE
+Record-Route: <sip:10.9.55.11:5070;lr;transport=udp>
+Contact: <sip:5146976602@10.9.55.11:5062;transport=UDP>
+Content-Type: application/sdp
+Content-Length:   132
+
+v=0
+o=user1 53655765 2353687637 IN IP4 10.9.55.11
+s=-
+c=IN IP4 10.9.55.11
+t=0 0
+m=audio 12001 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+----------------------------------------------- 2015-05-07 11:09:48:349.620
+UDP message received [546] bytes :
+
+ACK sip:5146976602@10.9.55.11:5062;transport=UDP SIP/2.0
+Via: SIP/2.0/UDP 10.9.55.11:5070;branch=z9hG4bKba7f443b61351403343cc7e15190e4ddbc4e1db2,SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5070-0-393636115A170158695-1431011381796-
+From: "john0 south" <sip:5146976600@mtlasdev55.net;user=phone>;tag=170158695-1431011381796-
+To: "john2 south" <sip:5146976602@10.9.55.11:5070>;tag=1
+Call-ID: BW110941796070515903781307@10.9.55.21
+CSeq: 393636115 ACK
+Contact: <sip:10.9.55.21:5060>
+Max-Forwards: 9
+Content-Length: 0
+
+

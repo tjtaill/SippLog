@@ -18,7 +18,23 @@ public class SippLogMscPrinter {
 
         PriorityQueue<SipMessage> messages = new PriorityQueue<>();
 
-        ANTLRInputStream input = new ANTLRInputStream( new FileInputStream( new File( args[0] ) ) );
+        parseSippLog(args[0], SippLogMscListener.ListenerType.ORIG, messages);
+        parseSippLog(args[1], SippLogMscListener.ListenerType.TERM, messages);
+
+        System.out.println("@startuml");
+        System.out.println("participant ORIG");
+        System.out.println("participant XS");
+        System.out.println("participant TERM");
+        for ( SipMessage msg : messages ) {
+            MscMessage msc = MscMessage.from(msg);
+            System.out.println( msc );
+        }
+        System.out.println("@enduml");
+    }
+
+    private static void parseSippLog(String filePath, SippLogMscListener.ListenerType type,
+                                     PriorityQueue<SipMessage> messages) throws IOException {
+        ANTLRInputStream input = new ANTLRInputStream( new FileInputStream( new File(filePath) ) );
 
         SippLogLexer lexer = new SippLogLexer( input );
 
@@ -29,9 +45,6 @@ public class SippLogMscPrinter {
         ParseTree tree = parser.sippLog();
 
         ParseTreeWalker walker = new ParseTreeWalker();
-        walker.walk(new SippLogMscListener(messages,   SippLogMscListener.ListenerType.TERM), tree);
-        for ( SipMessage msg : messages ) {
-            System.out.println( msg );
-        }
+        walker.walk(new SippLogMscListener(messages,  type), tree);
     }
 }

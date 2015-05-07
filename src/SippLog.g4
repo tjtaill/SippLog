@@ -24,13 +24,13 @@ DAY : DIGIT DIGIT;
 HOUR : DIGIT DIGIT;
 MINUTE : DIGIT DIGIT;
 SECOND : DIGIT DIGIT;
-UFRACTION : DIGIT DIGIT DIGIT;
-LFRACTION : DIGIT DIGIT DIGIT;
+MILLIS : DIGIT DIGIT DIGIT?;
+NANOS : DIGIT DIGIT DIGIT;
 
 
 
 DATE : YEAR '-' MONTH '-' DAY;
-TIME : HOUR ':' MINUTE ':' SECOND ':' UFRACTION '.' LFRACTION;
+TIME : HOUR ':' MINUTE ':' SECOND ':' MILLIS '.' NANOS;
 TIME_STAMP : '-'+ ' ' DATE ' ' TIME NEWLINE;
 
 sipMessage : sipResponse | sipRequest;
@@ -96,6 +96,7 @@ HEADER : 'Via'
        | 'Call-Info'
        | 'Accept'
        | 'Record-Route'
+       | 'P-Charging-Vector'
        ;
 
 sdp : sdpLine+;

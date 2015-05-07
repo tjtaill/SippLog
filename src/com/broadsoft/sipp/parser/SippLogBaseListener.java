@@ -1,4 +1,4 @@
-// Generated from C:/Users/troy/IdeaProjects/SippLog/src\SippLog.g4 by ANTLR 4.5
+// Generated from C:/code/java/SippLog/src\SippLog.g4 by ANTLR 4.5
 package com.broadsoft.sipp.parser;
 
 import org.antlr.v4.runtime.ParserRuleContext;

@@ -1,4 +1,4 @@
-// Generated from C:/Users/troy/IdeaProjects/SippLog/src\SippLog.g4 by ANTLR 4.5
+// Generated from C:/code/java/SippLog/src\SippLog.g4 by ANTLR 4.5
 package com.broadsoft.sipp.parser;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
@@ -18,7 +18,7 @@ public class SippLogParser extends Parser {
 		new PredictionContextCache();
 	public static final int
 		DIRECTION=1, BYTES=2, DIRECTION_LINE=3, YEAR=4, MONTH=5, DAY=6, HOUR=7, 
-		MINUTE=8, SECOND=9, UFRACTION=10, LFRACTION=11, DATE=12, TIME=13, TIME_STAMP=14, 
+		MINUTE=8, SECOND=9, MILLIS=10, NANOS=11, DATE=12, TIME=13, TIME_STAMP=14, 
 		RESPONSE_LINE=15, DIGIT=16, RESPONSE_CODE=17, METHOD=18, REQUEST_LINE=19, 
 		NEWLINE=20, SIP_VERSION=21, NOT_SPACE=22, SIP_URL=23, SIP_HEADER=24, HEADER=25, 
 		SDP_LINE=26, WS=27;
@@ -37,10 +37,10 @@ public class SippLogParser extends Parser {
 	};
 	private static final String[] _SYMBOLIC_NAMES = {
 		null, "DIRECTION", "BYTES", "DIRECTION_LINE", "YEAR", "MONTH", "DAY", 
-		"HOUR", "MINUTE", "SECOND", "UFRACTION", "LFRACTION", "DATE", "TIME", 
-		"TIME_STAMP", "RESPONSE_LINE", "DIGIT", "RESPONSE_CODE", "METHOD", "REQUEST_LINE", 
-		"NEWLINE", "SIP_VERSION", "NOT_SPACE", "SIP_URL", "SIP_HEADER", "HEADER", 
-		"SDP_LINE", "WS"
+		"HOUR", "MINUTE", "SECOND", "MILLIS", "NANOS", "DATE", "TIME", "TIME_STAMP", 
+		"RESPONSE_LINE", "DIGIT", "RESPONSE_CODE", "METHOD", "REQUEST_LINE", "NEWLINE", 
+		"SIP_VERSION", "NOT_SPACE", "SIP_URL", "SIP_HEADER", "HEADER", "SDP_LINE", 
+		"WS"
 	};
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
 
